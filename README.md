@@ -23,14 +23,14 @@ Navigate into your workspace directory.
 
 Run:
 
-```git clone https://github.com/lean/phaser-es6-webpack.git```
+```git clone https://github.com/verybluebot/phaser-es6-starter.git```
 
 ## 2. Install node.js and npm:
 
 https://nodejs.org/en/
 
 
-## 3. Install dependencies (optionally you can install [yarn](https://yarnpkg.com/)):
+## 3. Install dependencies 
 
 Navigate to the cloned repo's directory.
 
@@ -89,12 +89,4 @@ cordova run ios
 This will optimize and minimize the compiled bundle.
 
 ## Credits
-Big thanks to these great repos:
-
-https://github.com/belohlavek/phaser-es6-boilerplate
-
-https://github.com/cstuncsik/phaser-es6-demo
-
-## Contributors
-
-https://github.com/RenaudROHLINGER
+Big thanks to [lean](https://github.com/lean/phaser-es6-webpack) repo:

@@ -1,12 +1,12 @@
-import 'pixi'
-import 'p2'
-import Phaser from 'phaser'
+import 'pixi';
+import 'p2';
+import Phaser from 'phaser';
 
-import BootState from './states/Boot'
-import SplashState from './states/Splash'
-import GameState from './states/Game'
+import BootState from './states/Boot';
+import SplashState from './states/Splash';
+import GameState from './states/Game';
 
-import config from './config'
+import config from './config';
 
 class Game extends Phaser.Game {
     constructor () {
@@ -36,22 +36,22 @@ if (window.cordova) {
                 'deviceready',
                 this.onDeviceReady.bind(this),
                 false
-            )
+            );
         },
 
         // deviceready Event Handler
         //
         onDeviceReady: function () {
-            this.receivedEvent('deviceready')
+            this.receivedEvent('deviceready');
 
             // When the device is ready, start Phaser Boot state.
-            window.game.state.start('Boot')
+            window.game.state.start('Boot');
         },
 
         receivedEvent: function (id) {
-            console.log('Received Event: ' + id)
+            console.log('Received Event: ' + id);
         }
     };
 
-    app.initialize()
+    app.initialize();
 }

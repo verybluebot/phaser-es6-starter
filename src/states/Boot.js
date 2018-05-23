@@ -24,7 +24,11 @@ export default class extends Phaser.State {
     }
 
     render () {
-        if (this.fontsReady) {
+        if (this.fontsReady && this.game) {
+            this.game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
+            this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+            this.game.scale.refresh();
+
             this.state.start('Splash');
         }
     }
